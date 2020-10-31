@@ -12,17 +12,17 @@ namespace AspHomework.Controllers
     [Route("[controller]")]
     public class BooksController : ControllerBase
     {
-        private readonly ICrud bookService;
+        private readonly ICrud bookDomein;
 
-        public BooksController(ICrud bookService)
+        public BooksController(ICrud bookDomein)
         {
-            this.bookService = bookService;
+            this.bookDomein = bookDomein;
         }
 
         [HttpGet]
         public async Task<IEnumerable<BookModel>> Get([FromQuery] string genre)
         {
-            return await bookService.Get(genre);
+            return await bookDomein.Get(genre);
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace AspHomework.Controllers
         {
             try
             {
-                book = await bookService.Create(book);
+                book = await bookDomein.Create(book);
                 return Ok(book);
             }
             catch
@@ -44,7 +44,7 @@ namespace AspHomework.Controllers
         {
             try
             {
-                book = await bookService.Change(book);
+                book = await bookDomein.Change(book);
                 return Ok(book);
             }
             catch
@@ -58,7 +58,7 @@ namespace AspHomework.Controllers
         {
             try
             {
-                await bookService.Delete(id);
+                await bookDomein.Delete(id);
                 return Ok();
             }
             catch

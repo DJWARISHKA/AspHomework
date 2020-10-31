@@ -11,17 +11,17 @@ namespace AspHomework.Controllers
     [Route("[controller]")]
     public class GenresController : ControllerBase
     {
-        private readonly IReadOnly _genreService;
+        private readonly IReadOnly _genreDomein;
 
-        public GenresController(IReadOnly genreService)
+        public GenresController(IReadOnly genreDomein)
         {
-            _genreService = genreService;
+            _genreDomein = genreDomein;
         }
 
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {
-            return await _genreService.Get();
+            return await _genreDomein.Get();
         }
     }
 }
