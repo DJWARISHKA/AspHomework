@@ -1,7 +1,7 @@
-﻿using System.Linq;
-using AspHomework.Data.Entities;
+﻿using DAL.Entities;
+using Microsoft.EntityFrameworkCore.Internal;
 
-namespace AspHomework.Data.Context
+namespace DAL
 {
     public static class DbInitializer
     {

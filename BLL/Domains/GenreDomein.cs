@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AspHomework.Data.Context;
+using DAL;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspHomework.Business.Domeins
+namespace BLL.Domeins
 {
-    internal class GenreDomein : IReadOnly
+    public class GenreDomein : IReadOnly
     {
         private readonly AppContext _context;
 

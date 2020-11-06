@@ -1,7 +1,7 @@
-﻿using AspHomework.Data.Entities;
+﻿using DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspHomework.Data.Context
+namespace DAL
 {
     public class AppContext : DbContext
     {

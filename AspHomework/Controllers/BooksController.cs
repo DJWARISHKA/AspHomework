@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspHomework.Business.ApiModels;
-using AspHomework.Business.Domeins;
 using AspHomework.Filters;
+using BLL.Domeins;
+using BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspHomework.Controllers

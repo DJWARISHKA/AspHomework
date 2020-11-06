@@ -1,4 +1,4 @@
-﻿namespace AspHomework.Data.Entities
+﻿namespace DAL.Entities
 {
     public class BookGenre
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspHomework.Business.Domeins;
 using AspHomework.Filters;
+using BLL.Domeins;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspHomework.Controllers

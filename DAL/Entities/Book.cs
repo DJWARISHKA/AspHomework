@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace AspHomework.Data.Entities
+namespace DAL.Entities
 {
     public class Book
     {

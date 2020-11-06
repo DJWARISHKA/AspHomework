@@ -1,6 +1,6 @@
-using AspHomework.Business.Domeins;
-using AspHomework.Business.Mapper;
 using AutoMapper;
+using BLL.Domeins;
+using BLL.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

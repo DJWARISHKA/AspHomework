@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using AspHomework.Business.ApiModels;
-using AspHomework.Data.Entities;
 using AutoMapper;
+using BLL.ViewModels;
+using DAL.Entities;
 using Microsoft.EntityFrameworkCore;
-using AppContext = AspHomework.Data.Context.AppContext;
+using AppContext = DAL.AppContext;
 
-namespace AspHomework.Business.Domeins
+namespace BLL.Domeins
 {
     public class BookDomein : ICrud
     {

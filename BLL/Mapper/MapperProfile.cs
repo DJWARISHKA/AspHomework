@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using AspHomework.Business.ApiModels;
-using AspHomework.Data.Entities;
 using AutoMapper;
+using BLL.ViewModels;
+using DAL.Entities;
 
-namespace AspHomework.Business.Mapper
+namespace BLL.Mapper
 {
     public class MapperProfile : Profile
     {

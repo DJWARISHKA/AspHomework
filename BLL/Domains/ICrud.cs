@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspHomework.Business.ApiModels;
+using BLL.ViewModels;
 
-namespace AspHomework.Business.Domeins
+namespace BLL.Domeins
 {
     public interface ICrud
     {
